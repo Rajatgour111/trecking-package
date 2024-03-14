@@ -74,22 +74,37 @@ let location=useLocation()
     }, [])
 
 
-if(shipData.departures){
-    let datasample=shipData.departures?.constructor.name=="Object" ?  Object.entries(shipData.departures)?.map(([key,value])=>{
-        return(
-            value?.itinerary_id
-        )
-    }) : ""
-    console.log(datasample,'datasampledatasampledatasampledatasample');
-    // let showdata=datasample.map(async (e)=>{
-    //     return(
-          
-    //     )
-    // })
-    for(let i=0;i<datasample.length;i++){
-     
+    async function fetchData() {
+        if (shipData.departures) {
+            let datasample = shipData.departures?.constructor.name === "Object" ? Object.entries(shipData.departures)?.map(([key, value]) => {
+                return (
+                    value?.itinerary_id
+                )
+            }) : [];
+    
+            if (Array.isArray(datasample) && datasample.length > 0) {
+                let array = [];
+                await Promise.all(datasample.map(async (shipId) => {
+                    const response = await itenenaryDetail(shipId);
+                    array.push(response.data[shipId]);
+                }));
+                console.log({array});
+                if(array.length==datasample.length){
+                    alert("hiiii")
+                    setitenerarydata(array)
+                }
+                
+                // 'array' now contains all the data fetched from the 'itenenaryDetail' function for each 'shipId'
+            }
+        }
     }
-}
+    
+    // Call the fetchData function
+    useEffect(()=>{
+        fetchData();
+    },[shipData])
+  
+    
 
 
     const options = {
@@ -100,7 +115,7 @@ if(shipData.departures){
     };
 
 
-
+console.log(itenerarydata,"0000000000000000000000");
 
     return (
         <>
@@ -554,13 +569,14 @@ if(shipData.departures){
                                         {littleTabs.tab1 &&
                                             <div className="mdl-tabs__panel is-active" id="tab1-panel">
                                                 <div className="row">
-                                                    {itenerarydata[location?.state?.data] &&
-                                                            <div className="col-md-6">
+                                                    {itenerarydata?.length && itenerarydata?.map((e)=>{
+                                                        return( 
+                                                        <div className="col-md-6">
                                                             <div className="tracingcardBox">
                                                                 <img src="images/tour1.png" alt="" />
                                                                 <div className="trackingInner">
-                                                                    <h6>Lorem ipsum dolor sit</h6>
-                                                                    <p>Ultramarine, 199-guests 11 Days</p>
+                                                                    <h6>{e.itinerary_name}</h6>
+                                                                    <p>{e.expedition_name} ,{e.duration_days +" Days"}</p>
                                                                     <div className="fleBox">
                                                                         <span className="spanleft">Explore the trip</span>
                                                                         <span className="spanright">Save up to 30%</span>
@@ -584,7 +600,9 @@ if(shipData.departures){
                                                                 <a href="#">Get quote</a>
                                                                 <a href="#"><i className="fa-brands fa-whatsapp" /></a>
                                                             </div>
-                                                        </div> }
+                                                        </div>   )
+                                                    })
+                                                            }
                                                    
                                                     {/* <div className="col-md-6">
                                                         <div className="tracingcardBox">
