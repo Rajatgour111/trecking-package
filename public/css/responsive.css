@@ -1,0 +1,292 @@
+@media (min-width: 1800px) and (max-width: 2200px) {
+    .hero-banner {
+        padding-bottom: 0px;
+        padding-top: 100px;
+        height: 100vh
+    }
+
+}
+
+@media (min-width: 1500px) and (max-width: 1799px) {
+    .hero-banner {
+        padding-bottom: 0px;
+        padding-top: 100px;
+        height: 100vh
+    }
+
+}
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+    .hero-banner {
+        padding-bottom: 0px;
+        padding-top: 100px;
+        height: 100vh
+    }
+
+    .hero-banner .left-hero-color h1 {
+        font-size: 34px
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-banner {
+        padding-bottom: 0px;
+        padding-top: 100px
+    }
+
+    .partnerLogo {
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .tourGreyBox {
+        padding-bottom: 25px;
+    }
+
+    .tourCardBox {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tourImageBg {
+        width: 100%;
+        height: auto;
+    }
+
+    .owl-carousel .owl-item img {
+        height: 300px !important;
+    }
+
+    .footerSection {
+        padding: 30px 10px;
+        background: #141f26;
+        padding-bottom: 20px;
+    }
+
+    .rightPadding {
+        padding-right: 15px;
+    }
+
+    .tourCardBox img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .touritnerfaMap {
+        height: 280px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tourItineraryBg {
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        z-index: 1;
+    }
+
+    .footerSection .logoFooter {
+        width: 50%;
+    }
+
+    .hero-banner-second {
+        height: 370px;
+    }
+
+    .vertical-mdl-tabs {
+        margin-top: 0px;
+    }
+
+    .mdl-grid.mdl-grid--no-spacing {
+        padding: 0;
+        display: block;
+    }
+
+    .mdl-grid--no-spacing>.mdl-cell--2-col,
+    .mdl-grid--no-spacing>.mdl-cell--2-col-tablet.mdl-cell--2-col-tablet {
+        width: 100% !important;
+    }
+
+    .flexboxpprice .rightdate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tracingcardBox img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .onBoard img {
+        margin-left: 0px;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+
+    .onBoard p {
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .coachBoX img {
+        margin-left: 0px;
+        width: 100%;
+        height: 210px;
+        margin-bottom: 0px;
+    }
+
+    .coachBoX {
+        margin-bottom: 40px;
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .shipsecriptionRight {
+        border-left: none;
+        padding-left: 0px;
+        border-top: 1px solid #000;
+        margin-top: 20px;
+    }
+
+    .vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active,
+    .mdl-tabs__panel {
+        padding: 0 0px;
+    }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero-banner {
+        padding-bottom: 0px;
+        padding-top: 100px;
+        height: 450px;
+    }
+
+    .partnerLogo {
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+
+    .tourGreyBox {
+        padding-bottom: 25px;
+    }
+
+    .tourCardBox {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tourImageBg {
+        width: 100%;
+        height: auto;
+    }
+
+    .owl-carousel .owl-item img {
+        height: 200px !important;
+    }
+
+    .footerSection {
+        padding: 30px 10px;
+        background: #141f26;
+        padding-bottom: 20px;
+    }
+
+    .rightPadding {
+        padding-right: 15px;
+    }
+
+    .tourCardBox img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .touritnerfaMap {
+        height: 280px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tourItineraryBg {
+        width: 100%;
+        height: 200px;
+        margin-top: 0px;
+        z-index: 1;
+    }
+
+    .hero-banner-second {
+        height: 180px;
+    }
+
+    .vertical-mdl-tabs {
+        margin-top: 0px;
+    }
+
+    .mdl-grid.mdl-grid--no-spacing {
+        padding: 0;
+        display: block;
+    }
+
+    .mdl-grid--no-spacing>.mdl-cell--2-col,
+    .mdl-grid--no-spacing>.mdl-cell--2-col-tablet.mdl-cell--2-col-tablet {
+        width: 100% !important;
+    }
+
+    .flexboxpprice .rightdate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tracingcardBox img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .onBoard img {
+        margin-left: 0px;
+        width: 100%;
+        height: 180px;
+        margin-bottom: 0px;
+    }
+
+    .onBoard p {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .coachBoX img {
+        margin-left: 0px;
+        width: 100%;
+        height: 210px;
+        margin-bottom: 30px;
+    }
+
+    .coachBoX {
+        margin-bottom: 40px;
+        margin-left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .shipsecriptionRight {
+        border-left: none;
+        padding-left: 0px;
+        border-top: 1px solid #000;
+        margin-top: 20px;
+    }
+
+    .vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active,
+    .mdl-tabs__panel {
+        padding: 0 0px;
+    }
+
+    .shipListbox .leftRorate {
+        width: 60px;
+    }
+
+
+
+}
