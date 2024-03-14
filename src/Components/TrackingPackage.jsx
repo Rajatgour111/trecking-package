@@ -13,7 +13,6 @@ let location=useLocation()
     const fetchShipDataById = async () => {
         const response = await ShipDetail(shipId)
         if (response?.data) {
-            console.log("-------------------------Ship data", response.data)
             setShipData(response.data);
         }
         else {
@@ -23,7 +22,6 @@ let location=useLocation()
     const itinenaryDataById = async () => {
         const response = await itenenaryDetail(shipId)
         if (response?.data) {
-            console.log("-------------------------itinenary data", response.data)
             setitenerarydata(response.data);
         }
         else {
