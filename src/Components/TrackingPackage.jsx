@@ -88,7 +88,6 @@ let location=useLocation()
                 }));
                 console.log({array});
                 if(array.length==datasample.length){
-                    alert("hiiii")
                     setitenerarydata(array)
                 }
                 
